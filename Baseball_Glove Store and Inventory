@@ -1,0 +1,36 @@
+CREATE TABLE Baseball_Gloves (id integer primary key, Type text, Color text, Price integer, Length_Inches integer, Quantity integer);
+
+--Here I created a store database with various types of baseball gloves we offer (15) sorted by color, length, price, and quantity.
+
+INSERT INTO Baseball_Gloves VALUES 
+(1,"Catcher","Brown", 299, 33, 10),
+(2, "Pitcher","Black", 250, 11, 15),
+(3, "First_Base","Tan", 299, 13, 15),
+(4, "Infield","Brown",349, 11, 25),
+(5, "Outfield", "Black", 275, 13, 20),
+(6, "Pitcher","Tan", 275, 11, 10),
+(7, "Oufield","Brown", 299, 13, 25),
+(8, "Catcher","Black", 250, 33, 15),
+(9, "Infield","Tan", 299, 11, 20),
+(10,"First_Base","Brown", 250, 13, 20),
+(11, "Outfield","Tan", 250, 13, 20),
+(12, "Pitcher","Brown", 299, 11, 15),
+(13, "First_Base","Black", 275, 13, 10),
+(14, "Catcher","Tan", 275, 33, 15),
+(15, "Infield","Black", 250, 11, 15);
+
+--This is where I sorted my table by a specific category such as Price Ascending from least to greatest, Length Ascending from least to greatest, 
+Quantit Ascending from least to greatest, and lastly sorted by Color of gloves we offer.
+
+SELECT * FROM Baseball_Gloves
+ORDER BY Price asc;
+
+
+SELECT * FROM Baseball_Gloves
+ORDER BY Length asc;
+
+SELECT * FROM Baseball_Gloves
+ORDER BY Color;
+
+SELECT * FROM Baseball_Gloves
+ORDER BY Quantity asc;
